@@ -5,10 +5,12 @@ import random
 import time
 
 def generate_throttle_values():
-    return random.randint(45, 85)
+    return round(random.uniform(45, 85), 0)
+    #return random.randint(45, 85)
 
 def generate_engine_speed_values():
-    return random.randint(1400, 1500)
+    return round(random.uniform(1400, 1500), 0)
+    #return random.randint(1400, 1500)
 
 def generate_implement_depth_values():
     return round(random.uniform(5, 45), 2)
